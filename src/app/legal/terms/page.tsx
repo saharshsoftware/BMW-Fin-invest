@@ -13,7 +13,11 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <>
-      <PageIntro eyebrow="Legal" heading="Terms & Conditions" />
+      <PageIntro
+        eyebrow="Legal"
+        heading="Terms & Conditions"
+        lede="Delivering secure, transparent and customer-centric financial solutions through innovative digital lending services across India."
+      />
 
       <section className="bg-background">
         <Container className="py-16 sm:py-20">
@@ -121,7 +125,139 @@ export default function TermsPage() {
               </p>
             </LegalSection>
 
-            <LegalSection title="10. Contact">
+            <LegalSection title="10. Definitions & Interpretation">
+              <p>
+                Welcome to {site.legalName} (&quot;{site.brandName}&quot;),
+                which operates the ZapCash digital lending platform. Please
+                read these Terms and Conditions carefully before accessing
+                or using our loan products, digital platforms, or related
+                services. By accessing, browsing, or using our services,
+                you acknowledge that you have read, understood, and agreed
+                to be bound by these Terms and Conditions and any
+                applicable policies.
+              </p>
+              <p>
+                Unless the context otherwise requires, the following terms
+                shall have the meanings assigned to them below:
+              </p>
+              <ul>
+                <li>
+                  <strong>Agreement</strong> — Refers to these Terms and
+                  Conditions, including all annexures, schedules,
+                  addendums, amendments, and modifications made from time
+                  to time.
+                </li>
+                <li>
+                  <strong>Applicable Law</strong> — Means all laws,
+                  statutes, rules, regulations, notifications, guidelines,
+                  and directives applicable within the territory of India,
+                  including those prescribed under the General Clauses
+                  Act, 1897, and issued by relevant regulatory authorities.
+                </li>
+                <li>
+                  <strong>Application Form</strong> — Refers to the loan
+                  application submitted by the borrower, whether in
+                  physical or electronic form, along with all required
+                  information, declarations, and supporting documents.
+                </li>
+                <li>
+                  <strong>Bounce Charges</strong> — Means the charges or
+                  penalties levied in the event of dishonour, rejection, or
+                  failure of any payment instrument or electronic payment
+                  instruction issued by the borrower.
+                </li>
+                <li>
+                  <strong>Business Day</strong> — Refers to any day on
+                  which banks and financial institutions are open for
+                  business in Kolkata, West Bengal, excluding public
+                  holidays.
+                </li>
+                <li>
+                  <strong>Due Date</strong> — Means the date specified in
+                  the loan agreement on which repayment of instalments,
+                  interest, fees, charges, or any other amounts becomes
+                  payable by the borrower.
+                </li>
+              </ul>
+            </LegalSection>
+
+            <LegalSection title="11. Loan Terms">
+              <ul>
+                <li>
+                  The borrower agrees to borrow, and the lender agrees to
+                  lend, the sanctioned loan amount in accordance with the
+                  approved application and loan agreement.
+                </li>
+                <li>
+                  Disbursement may be made in one or more instalments as
+                  specified in the loan schedule.
+                </li>
+                <li>
+                  The lender may revise interest rates or loan terms in
+                  line with applicable laws, regulatory requirements, or
+                  internal policies.
+                </li>
+                <li>
+                  The borrower must ensure timely repayment through
+                  approved payment modes, including ECS, NACH, or
+                  authorized online transfers.
+                </li>
+                <li>
+                  Any delay or default may attract additional interest,
+                  bounce charges, or other applicable penalties.
+                </li>
+              </ul>
+            </LegalSection>
+
+            <LegalSection title="12. Interest, Fees & Charges">
+              <ul>
+                <li>
+                  Interest is calculated on a daily reducing balance and
+                  compounded monthly, as specified in the loan agreement.
+                  Additional interest or penalties may apply in case of
+                  delayed or defaulted payments.
+                </li>
+                <li>
+                  All applicable fees and charges, including processing
+                  fees, prepayment charges, and service-related costs, are
+                  disclosed in the Schedule of Charges available on our
+                  website.
+                </li>
+                <li>
+                  The borrower agrees to indemnify the lender against
+                  reasonable legal, administrative, or recovery-related
+                  expenses incurred due to default, in accordance with
+                  applicable laws.
+                </li>
+              </ul>
+            </LegalSection>
+
+            <LegalSection title="13. Default & Penalties">
+              <p>
+                Failure to make any payment on or before the due date shall
+                constitute an event of default.
+              </p>
+              <ul>
+                <li>
+                  Upon default, the lender may initiate recovery actions in
+                  accordance with applicable laws, which may include legal
+                  proceedings or reporting to credit information bureaus.
+                </li>
+                <li>
+                  The occurrence of events such as the borrower&apos;s
+                  death, insolvency, or initiation of legal proceedings
+                  against the borrower shall also be treated as an event of
+                  default.
+                </li>
+                <li>
+                  All outstanding amounts shall continue to attract
+                  applicable penal interest and charges until full
+                  settlement of dues.
+                </li>
+              </ul>
+            </LegalSection>
+
+            <LegalSection title="14. Contact">
               <p>
                 {site.legalName}
                 <br />

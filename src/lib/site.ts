@@ -9,13 +9,14 @@ export const site = {
     "RBI Registration No. B-05.05626 dated 17 Oct 2003, issued under Section 45-IA of the RBI Act, 1934",
   grievanceEmail: "grievance@bmwfininvest.com",
   supportEmail: "support@bmwfininvest.com",
+  supportPhone: "+91 9958940148",
   rbiCmsUrl: "https://cms.rbi.org.in",
   sachetUrl: "https://sachet.rbi.org.in",
   gro: {
     name: "Prashanth Kabra",
     designation: "Grievance Redressal Officer",
     email: "grievance@bmwfininvest.com",
-    phone: "[TO BE ADDED LATER]",
+    phone: "7665466546",
   },
   lsps: [
     {
@@ -53,4 +54,5 @@ export const legalLinks = [
   { href: "/legal/privacy-policy", label: "Privacy Policy" },
   { href: "/legal/terms", label: "Terms & Conditions" },
   { href: "/legal/disclaimer", label: "Disclaimer" },
+  { href: "/legal/refund-cancellation", label: "Refund & Cancellation" },
 ] as const;

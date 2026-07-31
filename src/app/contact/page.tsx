@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { PageIntro } from "@/components/PageIntro";
-import { MailIcon, MapPinIcon } from "@/components/icons";
+import { MailIcon, MapPinIcon, PhoneIcon } from "@/components/icons";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact BMW Fin-Invest at its Kolkata registered office, by email for general inquiries, or by email for complaints.",
+    "Contact BMW Fin-Invest at its Kolkata registered office, by email, or by phone for general inquiries.",
 };
 
 export default function ContactPage() {
@@ -55,20 +55,21 @@ export default function ContactPage() {
 
             <div className="flex items-start gap-4 rounded-2xl border border-hairline bg-surface p-7">
               <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-dim text-teal">
-                <MailIcon className="h-5 w-5" />
+                <PhoneIcon className="h-5 w-5" />
               </span>
               <div>
                 <h2 className="font-display text-base font-bold text-navy">
-                  Grievance / Complaints
+                  Support
                 </h2>
                 <a
-                  href={`mailto:${site.grievanceEmail}`}
+                  href={`tel:${site.supportPhone}`}
                   className="mt-2 inline-block text-sm font-medium text-teal hover:text-navy"
                 >
-                  {site.grievanceEmail}
+                  {site.supportPhone}
                 </a>
               </div>
             </div>
+
           </div>
 
           <div className="overflow-hidden rounded-2xl border border-hairline bg-surface">

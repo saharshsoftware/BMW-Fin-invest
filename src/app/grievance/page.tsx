@@ -13,15 +13,22 @@ export const metadata: Metadata = {
 const steps = [
   {
     number: "01",
-    title: "Email your complaint",
+    title: "Contact Customer Support",
     description: (
       <>
         Write to{" "}
         <a
-          href={`mailto:${site.grievanceEmail}`}
+          href={`mailto:${site.supportEmail}`}
           className="font-medium text-teal hover:text-navy"
         >
-          {site.grievanceEmail}
+          {site.supportEmail}
+        </a>{" "}
+        or call{" "}
+        <a
+          href={`tel:${site.supportPhone}`}
+          className="font-medium text-teal hover:text-navy"
+        >
+          {site.supportPhone}
         </a>{" "}
         with your name, loan or application reference (if any), and details
         of your complaint.
@@ -30,7 +37,24 @@ const steps = [
   },
   {
     number: "02",
-    title: "Escalate to the RBI Complaint Management System",
+    title: "Escalate to the Grievance Redressal Officer",
+    description: (
+      <>
+        If your complaint is not resolved by Customer Support, escalate it
+        to the Grievance Redressal Officer at{" "}
+        <a
+          href={`mailto:${site.grievanceEmail}`}
+          className="font-medium text-teal hover:text-navy"
+        >
+          {site.grievanceEmail}
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    number: "03",
+    title: "Escalate to the RBI",
     description: (
       <>
         If your complaint is not resolved within 30 days, escalate it
@@ -42,17 +66,8 @@ const steps = [
           className="font-medium text-teal hover:text-navy"
         >
           Complaint Management System
-        </a>
-        .
-      </>
-    ),
-  },
-  {
-    number: "03",
-    title: "Or file via the Sachet Portal",
-    description: (
-      <>
-        You may alternatively file your complaint on the RBI&apos;s{" "}
+        </a>{" "}
+        or the{" "}
         <a
           href={site.sachetUrl}
           target="_blank"

@@ -13,7 +13,11 @@ export const metadata: Metadata = {
 export default function DisclaimerPage() {
   return (
     <>
-      <PageIntro eyebrow="Legal" heading="Disclaimer" />
+      <PageIntro
+        eyebrow="Legal"
+        heading="Disclaimer"
+        lede="Delivering secure, transparent and customer-centric financial solutions through innovative digital lending services across India."
+      />
 
       <section className="bg-background">
         <Container className="py-16 sm:py-20">
@@ -97,7 +101,93 @@ export default function DisclaimerPage() {
               </p>
             </LegalSection>
 
-            <LegalSection title="7. Contact">
+            <LegalSection title="7. General Notice">
+              <p>
+                {site.legalName} is committed to maintaining transparency,
+                accuracy, and integrity in all communications. Users are
+                advised to read this Disclaimer carefully before accessing
+                or engaging with our products or services.
+              </p>
+              <p>
+                All information provided on this website or through
+                associated communication channels is intended for general
+                informational purposes only. While reasonable efforts are
+                made to ensure accuracy and reliability, the Company does
+                not warrant that such information is complete, current, or
+                free from errors at all times.
+              </p>
+            </LegalSection>
+
+            <LegalSection title="8. Financial Awareness">
+              <p>
+                Financial products, including lending and
+                investment-related services, involve inherent risks. Users
+                are encouraged to conduct independent due diligence and,
+                where appropriate, seek advice from qualified financial or
+                legal professionals before making any financial decisions.
+              </p>
+            </LegalSection>
+
+            <LegalSection title="9. No Guaranteed Returns">
+              <p>
+                {site.legalName} does not guarantee or assure any fixed
+                returns, outcomes, or benefits in relation to any financial
+                product or service. Actual results may vary based on market
+                conditions, regulatory factors, and individual
+                circumstances.
+              </p>
+            </LegalSection>
+
+            <LegalSection title="10. Third-Party Content">
+              <p>
+                The website may contain references or links to third-party
+                websites or content for convenience. The Company does not
+                control, endorse, or assume responsibility for the
+                accuracy, content, or practices of such third-party
+                platforms.
+              </p>
+            </LegalSection>
+
+            <LegalSection title="11. Limitation of Liability">
+              <p>
+                To the extent permitted by applicable law, {site.legalName}
+                {" "}shall not be liable for any direct, indirect,
+                incidental, or consequential losses arising from reliance
+                on information provided on this website or through related
+                communication channels.
+              </p>
+            </LegalSection>
+
+            <LegalSection title="12. Policy Updates">
+              <p>
+                This Disclaimer may be revised or updated from time to time
+                without prior notice. Continued use of the website or
+                services constitutes acceptance of the latest version of
+                this Disclaimer.
+              </p>
+            </LegalSection>
+
+            <LegalSection title="13. Important Security Notice">
+              <p>
+                {site.legalName} does not request confidential information
+                such as passwords, OTPs, or login credentials through
+                email, SMS, or unsolicited communication. Users are advised
+                to report any suspicious activity through official
+                communication channels only.
+              </p>
+            </LegalSection>
+
+            <LegalSection title="14. Our Commitment">
+              <p>
+                We value the trust placed in us by our customers and
+                stakeholders. {site.legalName} remains committed to ethical
+                conduct, regulatory compliance, and transparent practices in
+                every interaction, reinforcing our dedication to
+                responsible financial services.
+              </p>
+            </LegalSection>
+
+            <LegalSection title="15. Contact">
               <p>
                 {site.legalName}
                 <br />

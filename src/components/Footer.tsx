@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "./Container";
-import { quickLinks, site } from "@/lib/site";
+import { legalLinks, quickLinks, site } from "@/lib/site";
 
 export function Footer() {
   return (
     <footer className="border-t border-hairline bg-navy text-white/80">
       <Container className="py-14">
-        <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr_1fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
               <Image
@@ -36,15 +36,15 @@ export function Footer() {
             </p>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li>
-                <span className="text-white/50">Grievance: </span>
-                <a href={`mailto:${site.grievanceEmail}`} className="text-white hover:text-teal">
-                  {site.grievanceEmail}
-                </a>
-              </li>
-              <li>
                 <span className="text-white/50">General Inquiries: </span>
                 <a href={`mailto:${site.supportEmail}`} className="text-white hover:text-teal">
                   {site.supportEmail}
+                </a>
+              </li>
+              <li>
+                <span className="text-white/50">Support: </span>
+                <a href={`tel:${site.supportPhone}`} className="text-white hover:text-teal">
+                  {site.supportPhone}
                 </a>
               </li>
             </ul>
@@ -56,6 +56,21 @@ export function Footer() {
             </p>
             <ul className="mt-4 space-y-2.5 text-sm">
               {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-white/80 hover:text-teal">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wide text-white/50">
+              Legal
+            </p>
+            <ul className="mt-4 space-y-2.5 text-sm">
+              {legalLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-white/80 hover:text-teal">
                     {link.label}

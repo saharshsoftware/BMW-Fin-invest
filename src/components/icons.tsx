@@ -66,6 +66,14 @@ export function UsersIcon({ className = "" }: IconProps) {
   );
 }
 
+export function PhoneIcon({ className = "" }: IconProps) {
+  return (
+    <svg {...base} className={className}>
+      <path d="M4 3.5H7.2L8.5 6.8L6.7 8.1C7.4 9.7 8.7 11 10.3 11.7L11.6 9.9L15 11.2V14.4C15 15.2 14.3 15.9 13.5 15.8C8.3 15.4 4.1 11.2 3.7 6C3.6 5.2 2.9 3.5 4 3.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export function MapPinIcon({ className = "" }: IconProps) {
   return (
     <svg {...base} className={className}>
