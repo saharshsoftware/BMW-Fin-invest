@@ -13,7 +13,7 @@ export const site = {
   rbiCmsUrl: "https://cms.rbi.org.in",
   sachetUrl: "https://sachet.rbi.org.in",
   gro: {
-    name: "Prashanth Kabra",
+    name: "Sumit Rajan",
     designation: "Grievance Redressal Officer",
     email: "grievance@bmwfininvest.com",
     phone: "7665466546",
